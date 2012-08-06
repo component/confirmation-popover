@@ -1,0 +1,13 @@
+{
+  "name": "popover-confirmation",
+  "description": "Popover confirmation component",
+  "version": "0.0.1",
+  "keywords": ["confirm", "confirmation", "popover", "ui"],
+  "dependencies": {
+    "component/popover": "*",
+    "component/jquery": "*"
+  },
+  "scripts": ["index.js"],
+  "styles": ["popover.css"],
+  "templates": ["popover.html"]
+}
