@@ -34,9 +34,6 @@ var confirm = new Confirmation('This action cannot be undone.', 'Delete tobi?');
 confirm.show(el);
 ```
 
- View [Tip](http://github.com/component/tip) and [Popover](http://github.com/component/popover) for additional
- API documentation.
-
 ### ConfirmationPopover#focus(type)
 
   By default the "cancel" button is focused, however you
@@ -56,6 +53,11 @@ confirm.show(el);
   a boolean representing the user's choice.
 
   When `fn` is omitted you may still utilize the `cancel` / `ok` events.
+
+### ...
+
+  View [Tip](http://github.com/component/tip) and [Popover](http://github.com/component/popover) for additional
+  API documentation.
 
 ## License
 
