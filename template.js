@@ -1,0 +1,1 @@
+module.exports = '<div class="confirmation-popover-content">\n  <div class="confirmation-popover-message"></div>\n  <div class="confirmation-popover-actions">\n    <button class="cancel">Cancel</button>\n    <button class="ok main">Ok</button>\n  </div>\n</div>';
