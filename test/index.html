@@ -3,7 +3,7 @@
   <head>
     <title>ConfirmationPopover</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="out.css" />
+    <link rel="stylesheet" href="../build/build.css" />
     <style>
       body {
         padding: 60px;
@@ -25,13 +25,13 @@
   </head>
   <body>
     <title>ConfirmationPopover</title>
-    <script src="out.js"></script>
+    <script src="../build/build.js"></script>
     <a href="#" id="auto">Auto</a>
     <a href="#" id="auto-title">Auto Title</a>
     <script>
-      var o = require('jquery');
+      var o = require('component-jquery');
       var Popover = require('confirmation-popover');
-      require('popover').effect = 'fade';
+      require('component-popover').effect = 'fade';
 
       var confirm = new Popover('Are you sure?');
       confirm.show('#auto', function(ok){
