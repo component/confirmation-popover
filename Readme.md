@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-$ npm install confirmation-popover-component
+$ component install component/confirmation-popover
 ```
 
 ## Features
