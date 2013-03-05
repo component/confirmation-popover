@@ -131,7 +131,7 @@ ConfirmationPopover.prototype.ok = function(text){
 
 ConfirmationPopover.prototype.show = function(el, fn){
   Popover.prototype.show.call(this, el);
-  this.el.find('.' + this._focus).focus();
+  if (this._focus) this.el.find('.' + this._focus).focus();
   this.callback = fn || function(){};
   return this;
 };

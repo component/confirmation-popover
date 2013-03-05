@@ -1,4 +1,3 @@
-
 # Confirmation Popover
 
   Popover confirmation component built on top of [Popover](http://github.com/component/popover).
@@ -34,20 +33,20 @@ var confirm = new Confirmation('This action cannot be undone.', 'Delete tobi?');
 confirm.show(el);
 ```
 
-### ConfirmationPopover#focus(type)
+### .focus(type)
 
   By default the "cancel" button is focused, however you
   may invoke `.focus('ok')`.
 
-### ConfirmationPopover#cancel(text)
+### .cancel(text)
 
   Set cancel button `text`.
 
-### ConfirmationPopover#ok(text)
+### .ok(text)
 
   Set cancel ok `text`.
 
-### ConfirmationPopover#show(el, [fn])
+### .show(el, [fn])
 
   Attach to `el`, and invoke `fn` with
   a boolean representing the user's choice.
