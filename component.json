@@ -7,6 +7,9 @@
     "component/popover": "*",
     "component/jquery": "*"
   },
+  "development": {
+    "component/aurora": "*"
+  },
   "scripts": ["index.js", "template.js"],
   "styles": ["popover.css"]
 }
