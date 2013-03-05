@@ -10,10 +10,8 @@
   "component": {
     "styles": ["popover.css"],
     "scripts": {
-      "confirmation-popover": "index.js"
-    },
-    "templates": {
-      "popover": "popover.html"
+      "confirmation-popover/index.js": "index.js",
+      "confirmation-popover/template.js": "template.js"
     }
   }
 }
