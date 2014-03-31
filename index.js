@@ -3,8 +3,9 @@
  * Module dependencies.
  */
 
-var Popover = require('popover')
-  , o = require('jquery');
+var Popover = require('popover');
+var q = require('query');
+var delegate = require('delegate');
 var inherit = require('inherit');
 
 /**
@@ -23,12 +24,11 @@ module.exports = ConfirmationPopover;
  */
 
 function ConfirmationPopover(msg, title) {
-  this.actions = o(require('./template'));
-  Popover.call(this, this.actions, title);
+  Popover.call(this, require('./template'), title);
   this.classname = 'popover confirmation-popover';
-  this.actions.find('.cancel').click(this.oncancel.bind(this));
-  this.actions.find('.ok').click(this.onok.bind(this));
-  this.message(msg);
+  delegate.bind(this.el, '.cancel', 'click', this.oncancel.bind(this));
+  delegate.bind(this.el, '.ok', 'click', this.onok.bind(this));
+  this.confirmation(msg);
 }
 
 /**
@@ -77,8 +77,10 @@ ConfirmationPopover.prototype.onok = function(e){
  * @api public
  */
 
-ConfirmationPopover.prototype.message = function(msg){
-  this.actions.find('.confirmation-popover-message').text(msg);
+ConfirmationPopover.prototype.confirmation = function(msg){
+  var el = q('.confirmation-popover-message', this.el);
+  if (typeof msg === 'string') el.innerHTML = msg;
+  else el.appendChild(msg);
   return this;
 };
 
@@ -104,7 +106,7 @@ ConfirmationPopover.prototype.focus = function(type){
  */
 
 ConfirmationPopover.prototype.cancel = function(text){
-  this.actions.find('.cancel').text(text);
+  q('.cancel', this.el).innerHTML = text;
   return this;
 };
 
@@ -117,7 +119,7 @@ ConfirmationPopover.prototype.cancel = function(text){
  */
 
 ConfirmationPopover.prototype.ok = function(text){
-  this.actions.find('.ok').text(text);
+  q('.ok', this.el).innerHTML = text;
   return this;
 };
 
@@ -132,7 +134,7 @@ ConfirmationPopover.prototype.ok = function(text){
 
 ConfirmationPopover.prototype.show = function(el, fn){
   Popover.prototype.show.call(this, el);
-  if (this._focus) this.el.find('.' + this._focus).focus();
+  if (this._focus) q('.' + this._focus, this.el).focus();
   this.callback = fn || function(){};
   return this;
 };

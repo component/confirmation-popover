@@ -11,7 +11,8 @@
   "dependencies": {
     "component/inherit": "0.0.3",
     "component/popover": "*",
-    "component/jquery": "*"
+    "component/query": "*",
+    "component/delegate": "*"
   },
   "development": {
     "component/aurora": "*"
