@@ -5,6 +5,7 @@
 
 var Popover = require('popover')
   , o = require('jquery');
+var inherit = require('inherit');
 
 /**
  * Expose `ConfirmationPopover`.
@@ -34,7 +35,7 @@ function ConfirmationPopover(msg, title) {
  * Inherits from `Popover.prototype`.
  */
 
-ConfirmationPopover.prototype.__proto__ = Popover.prototype;
+inherit(ConfirmationPopover, Popover);
 
 /**
  * Handle cancel click.
