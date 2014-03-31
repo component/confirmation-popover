@@ -5,7 +5,6 @@
 
 var Popover = require('popover');
 var q = require('query');
-var delegate = require('delegate');
 var inherit = require('inherit');
 
 /**
@@ -26,8 +25,8 @@ module.exports = ConfirmationPopover;
 function ConfirmationPopover(msg, title) {
   Popover.call(this, require('./template'), title);
   this.classname = 'popover confirmation-popover';
-  delegate.bind(this.el, '.cancel', 'click', this.oncancel.bind(this));
-  delegate.bind(this.el, '.ok', 'click', this.onok.bind(this));
+  this.events.bind('click .cancel', 'oncancel');
+  this.events.bind('click .ok', 'onok');
   this.confirmation(msg);
 }
 
