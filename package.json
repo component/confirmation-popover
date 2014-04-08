@@ -9,8 +9,7 @@
     "component"
   ],
   "dependencies": {
-    "popover-component": "*",
-    "jquery-component": "*"
+    "popover-component": "*"
   },
   "component": {
     "styles": [
