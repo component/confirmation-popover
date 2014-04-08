@@ -18,5 +18,6 @@
   },
   "scripts": ["index.js", "template.js"],
   "styles": ["popover.css"],
+  "demo": "http://component.github.io/confirmation-popover/",
   "license": "MIT"
 }

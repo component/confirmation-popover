@@ -4,6 +4,8 @@
 
   ![js popover confirmation component](http://f.cl.ly/items/2H3a3C1M1k071z1B360I/Screen%20Shot%202012-08-06%20at%2012.16.59%20PM.png)
 
+  Live demo is [here](http://component.github.io/confirmation-popover/).
+
 ## Installation
 
 ```
