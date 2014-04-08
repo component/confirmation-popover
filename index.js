@@ -23,7 +23,7 @@ module.exports = ConfirmationPopover;
  */
 
 function ConfirmationPopover(msg, title) {
-  Popover.call(this, require('./template'), title);
+  Popover.call(this, require('./template.html'), title);
   this.classname = 'popover confirmation-popover';
   this.events.bind('click .cancel', 'oncancel');
   this.events.bind('click .ok', 'onok');

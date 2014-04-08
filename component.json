@@ -17,11 +17,13 @@
     "component/aurora": "*"
   },
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
   ],
   "styles": [
     "popover.css"
+  ],
+  "templates": [
+    "template.html"
   ],
   "demo": "http://component.github.io/confirmation-popover/",
   "license": "MIT"

@@ -1,9 +1,6 @@
 
-build: popover.css index.js template.js components
+build: popover.css index.js template.html components
 	@component build --dev
-
-template.js: template.html
-	@component convert $<
 
 components:
 	@component install --dev
