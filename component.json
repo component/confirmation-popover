@@ -1,7 +1,7 @@
 {
   "name": "confirmation-popover",
   "description": "Popover confirmation component",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [
     "confirm",
     "confirmation",
@@ -16,8 +16,13 @@
   "development": {
     "component/aurora": "*"
   },
-  "scripts": ["index.js", "template.js"],
-  "styles": ["popover.css"],
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "popover.css"
+  ],
   "demo": "http://component.github.io/confirmation-popover/",
   "license": "MIT"
 }
