@@ -9,7 +9,7 @@
     "ui"
   ],
   "dependencies": {
-    "component/inherit": "0.0.3",
+    "component/inherit": "*",
     "component/popover": "*",
     "component/query": "*"
   },

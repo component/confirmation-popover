@@ -9,7 +9,19 @@
     "component"
   ],
   "dependencies": {
-    "popover-component": "*"
+    "component-inherit": "~0",
+    "component-query": "~0",
+    "popover-component": "^1.1.1"
+  },
+  "browser": {
+    "inherit": "component-inherit",
+    "popover": "popover-component",
+    "query": "component-query"
+  },
+  "browserify": {
+    "transform": [
+      "stringify"
+    ]
   },
   "component": {
     "styles": [
@@ -20,8 +32,12 @@
       "confirmation-popover/template.js": "template.js"
     }
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/component/confirmation-popover.git"
+  },
+  "devDependencies": {
+    "stringify": "^3.1.0"
   }
 }
